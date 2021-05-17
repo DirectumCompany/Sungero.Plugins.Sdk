@@ -1,0 +1,7 @@
+# Корневой файл EditorConfig
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+dotnet_sort_system_directives_first = true

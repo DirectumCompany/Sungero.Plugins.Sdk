@@ -1,4 +1,5 @@
 using System;
+using Sungero.Plugins.Sdk.Logging;
 
 namespace Sungero.Plugins.Sdk
 {
@@ -7,17 +8,6 @@ namespace Sungero.Plugins.Sdk
   /// </summary>
   public static class Logs
   {
-    #region Поля и свойства
-
-    /// <summary>
-    /// Внутренний метод получения логгеров.
-    /// </summary>
-    private static readonly Func<string, ILog> internalGetLogger = null;
-
-    #endregion
-
-    #region Методы
-
     /// <summary>
     /// Получить логгер.
     /// </summary>
@@ -45,9 +35,7 @@ namespace Sungero.Plugins.Sdk
     /// <returns>Логгер.</returns>
     public static ILog GetLogger(string loggerName)
     {
-      return internalGetLogger?.Invoke(loggerName) ?? NullLogger.Instance;
+      return LoggerFactory.Instance.Create(loggerName) ?? NullLogger.Instance;
     }
-
-    #endregion
   }
 }
