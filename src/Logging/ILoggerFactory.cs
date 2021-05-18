@@ -1,9 +1,7 @@
-﻿using System;
-
-namespace Sungero.Plugins.Sdk.Logging
+﻿namespace Sungero.Plugins.Sdk.Logging
 {
   /// <summary>
-  /// Интерфейс, для фабрик создающих логгеры.
+  /// Интерфейс для фабрик, создающих логгеры.
   /// </summary>
   public interface ILoggerFactory
   {
@@ -11,7 +9,7 @@ namespace Sungero.Plugins.Sdk.Logging
     /// Создать логгер.
     /// </summary>
     /// <param name="loggerName">Имя логера.</param>
-    /// <returns>Экземляр логгера.</returns>
+    /// <returns>Экземпляр логгера.</returns>
     ILog Create(string loggerName);
   }
 }

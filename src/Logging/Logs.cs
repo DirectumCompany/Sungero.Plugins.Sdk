@@ -35,7 +35,7 @@ namespace Sungero.Plugins.Sdk
     /// <returns>Логгер.</returns>
     public static ILog GetLogger(string loggerName)
     {
-      return LoggerProvider.Create(loggerName) ?? NullLogger.Instance;
+      return LoggerFactoryProvider.GetFactory()?.Create(loggerName) ?? NullLogger.Instance;
     }
   }
 }
