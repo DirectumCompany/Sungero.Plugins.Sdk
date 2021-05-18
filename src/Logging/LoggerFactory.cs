@@ -3,20 +3,17 @@
 namespace Sungero.Plugins.Sdk.Logging
 {
   /// <summary>
-  /// Класс, обеспечивающий создание логгеров на основе зарегистрированных провайдеров.
+  /// Класс, обеспечивающий создание логгеров на основе установленного провайдера.
   /// </summary>
   public sealed class LoggerFactory : IDisposable
   {
-    private static readonly Lazy<LoggerFactory> instance = new Lazy<LoggerFactory>(() => new LoggerFactory());
-
     /// <summary>
     /// Единственный экземпляр фабрики.
     /// </summary>
     public static LoggerFactory Instance => instance.Value;
 
-    /// <summary>
-    /// Зарегистрированный провайдер.
-    /// </summary>
+    private static readonly Lazy<LoggerFactory> instance = new Lazy<LoggerFactory>(() => new LoggerFactory());
+
     private ILoggerProvider registeredLoggerProvider;
 
     /// <summary>

@@ -3,7 +3,7 @@
 namespace Sungero.Plugins.Sdk.Logging
 {
   /// <summary>
-  /// Интерфейс, для типа создающего логгеры.
+  /// Интерфейс, для классов создающих логгеры.
   /// </summary>
   public interface ILoggerProvider : IDisposable
   {
