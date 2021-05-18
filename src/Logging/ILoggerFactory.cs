@@ -3,9 +3,9 @@
 namespace Sungero.Plugins.Sdk.Logging
 {
   /// <summary>
-  /// Интерфейс, для классов создающих логгеры.
+  /// Интерфейс, для фабрик создающих логгеры.
   /// </summary>
-  public interface ILoggerProvider : IDisposable
+  public interface ILoggerFactory
   {
     /// <summary>
     /// Создать логгер.
