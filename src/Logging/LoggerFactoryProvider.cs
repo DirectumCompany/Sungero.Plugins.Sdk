@@ -21,7 +21,7 @@ namespace Sungero.Plugins.Sdk.Logging
       if (loggerFactory is null)
         loggerFactory = factory;
       else
-        loggerFactory.Create(nameof(LoggerFactoryProvider))?.Warn("Can't set logger provider, because it's already setted.");
+        loggerFactory.Create(nameof(LoggerFactoryProvider))?.Warn("Can't set logger provider, because it's already set.");
     }
 
     /// <summary>
