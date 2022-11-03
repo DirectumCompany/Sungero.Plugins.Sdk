@@ -9,7 +9,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <Configurations>Debug;Release</Configurations>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.1.2</Version>
+    <Version>1.2.1</Version>
     <Company>DIRECTUM Company</Company>
     <Authors>DIRECTUM</Authors>
     <Description>Create .net extension plugins for Sungero.</Description>
