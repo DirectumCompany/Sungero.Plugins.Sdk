@@ -28,5 +28,14 @@ namespace Sungero.Plugins.Sdk
     /// <param name="otp">Одноразовый пароль.</param>
     /// <returns>True, если одноразовый пароль успешно получен, иначе - false.</returns>
     bool GetOtp(string message, string otpLabel, string hint, out string otp);
+
+    /// <summary>
+    /// Показать изображение.
+    /// </summary>
+    /// <param name="message">Сообщение, отображаемое пользователю.</param>
+    /// <param name="sourceImage">Содержимое изображения в определенном формате.</param>
+    /// <param name="imageMimeType">MIME-тип изображения.</param>
+    /// <returns>True, если изображение успешно показано, иначе - false.</returns>
+    bool ShowImage(string message, byte[] sourceImage, string imageMimeType);
   }
 }
