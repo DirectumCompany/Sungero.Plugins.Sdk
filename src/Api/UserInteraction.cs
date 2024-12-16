@@ -45,12 +45,13 @@ namespace Sungero.Plugins.Sdk
     /// <param name="otpLabel">Заголовок поля ввода OTP (если указана пустая строка, то поле ввода не показывается).</param>
     /// <param name="hint">Подсказка, отображаемая пользователю (например, если ранее был введен неверный OTP).</param>
     /// <param name="otp">Одноразовый пароль.</param>
+    /// <param name="showRetryButton">Признак показа кнопки переповтора, по умолчанию - нет.</param>
     /// <returns>True, если одноразовый пароль успешно получен, иначе - false.</returns>
-    public static bool GetOtpFromUser(string message, string otpLabel, string hint, out string otp)
+    public static bool GetOtpFromUser(string message, string otpLabel, string hint, out string otp, bool showRetryButton = false)
     {
       CheckInteractor();
 
-      return userInteractor.Value.GetOtp(message, otpLabel, hint, out otp);
+      return userInteractor.Value.GetOtp(message, otpLabel, hint, out otp, showRetryButton);
     }
 
     /// <summary>
