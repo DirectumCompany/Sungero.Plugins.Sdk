@@ -26,8 +26,9 @@ namespace Sungero.Plugins.Sdk
     /// <param name="otpLabel">Заголовок поля ввода OTP (если указана пустая строка, то поле ввода не показывается).</param>
     /// <param name="hint">Подсказка, отображаемая пользователю (например, если ранее был введен неверный OTP).</param>
     /// <param name="otp">Одноразовый пароль.</param>
+    /// <param name="showRetryButton">Признак показа кнопки переповтора, по умолчанию - нет.</param>
     /// <returns>True, если одноразовый пароль успешно получен, иначе - false.</returns>
-    bool GetOtp(string message, string otpLabel, string hint, out string otp);
+    bool GetOtp(string message, string otpLabel, string hint, out string otp, bool showRetryButton = false);
 
     /// <summary>
     /// Показать пользователю диалог с изображением.
