@@ -10,10 +10,7 @@
     <Configurations>Debug;Release</Configurations>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.3.0</Version>
-    <Company>DIRECTUM Company</Company>
-    <Authors>DIRECTUM</Authors>
     <Description>Create .net extension plugins for Sungero.</Description>
-    <Copyright>© DIRECTUM Company, 2020</Copyright>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>sungero plugins sdk</PackageTags>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
